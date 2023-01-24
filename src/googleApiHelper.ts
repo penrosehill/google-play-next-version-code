@@ -20,7 +20,7 @@ const getEditId = async (appId:string, client: Compute | JSONClient) => {
 }
 
 
-export const LastVersionCode = async (appId, serviceAccountJsonFile)=>{
+export const NextVersionCode = async (appId, serviceAccountJsonFile)=>{
 
     core.exportVariable("GOOGLE_APPLICATION_CREDENTIALS", serviceAccountJsonFile);
 
@@ -59,5 +59,5 @@ export const LastVersionCode = async (appId, serviceAccountJsonFile)=>{
                 
         }
     }
-    return result;    
+    return result + 1;    
 }
