@@ -1,5 +1,8 @@
 name: 'Get the next version code'
 description: 'An action to know the next version code of an app in google play console'
+branding:
+  icon: 'play'
+  color: 'green'
 inputs:
   serviceAccountJsonFile:
     description: "The json file of the service account private key to authorize access to google play console api data"
