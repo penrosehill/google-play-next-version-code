@@ -1,5 +1,8 @@
-name: 'Know the latest version code of an app on google play'
-description: 'an action to know the latest version code of an application published in the Play Store'
+name: 'Get the next version code'
+description: 'An action to know the next version code of an app in google play console'
+branding:
+  icon: 'play'
+  color: 'green'
 inputs:
   serviceAccountJsonFile:
     description: "The json file of the service account private key to authorize access to google play console api data"
@@ -8,8 +11,8 @@ inputs:
     description: "The package name, of the app"
     required: true
 outputs:
-  versionCode:
-    description: 'The last version code'
+  nextVersionCode:
+    description: 'The next version code'
 runs:
   using: 'node16'
-  main: 'dist/index.js'
+  main: 'lib/index.js'
