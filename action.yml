@@ -1,0 +1,15 @@
+name: 'Know the latest version code of an app on google play'
+description: 'an action to know the latest version code of an application published in the Play Store'
+inputs:
+  serviceAccountJsonFile:
+    description: "The json file of the service account private key to authorize access to google play console api data"
+    required: true
+  packageName:
+    description: "The package name, of the app"
+    required: true
+outputs:
+  versionCode:
+    description: 'The last version code'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
