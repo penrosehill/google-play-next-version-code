@@ -1,0 +1,25 @@
+{
+  "name": "google-play-version-code",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmachado53/google-play-version-code.git"
+  },
+  "keywords": [],
+  "author": "mmachado53",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmachado53/google-play-version-code/issues"
+  },
+  "homepage": "https://github.com/mmachado53/google-play-version-code#readme",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^3.0.0",
+    "@actions/core": "^1.10.0"
+  }
+}
